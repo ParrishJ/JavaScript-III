@@ -1,4 +1,4 @@
-/* The for principles of "this";
+/* The for principles of "this" - Jared-Parrish;
 * in your own words. explain the four principle for the "this" keyword below.
 *
 * 1. 
