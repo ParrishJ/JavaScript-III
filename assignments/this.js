@@ -13,14 +13,51 @@
 
 // code example for Window Binding
 
+function logger(){
+    console.log(this);
+}
+
+logger();
+
 // Principle 2
 
-// code example for Implicit Binding
+const neighbor = {
+    "name": "jim",
+    "occupation": "landscaper",
+    "sayName": function (){
+        console.log(this.name);
+    }
+}
+
+neighbor.sayName();
+
 
 // Principle 3
+
+const Sandwhich = function (type, size, price) {
+    this.type = type,
+    this.size = size,
+    this.price = price
+}
+
+const hoagie = new Sandwhich ("haogie", "large", "cheap");
+
+console.log(hoagie);
+
+
 
 // code example for New Binding
 
 // Principle 4
+
+let greet = function(timeOfDay){
+    console.log(this.name + ' says good ' + timeOfDay)
+} 
+
+const carl = {
+    "name": "Carl"
+}
+
+greet.call(carl, "morning");
 
 // code example for Explicit Binding
